@@ -83,7 +83,7 @@ const projects=[
   {n:"03",title:"Clovnime",cat:"Entertainment · Streaming",desc:"Platform streaming untuk menonton anime ongoing dan completed dengan jadwal rilis terbaru.",site:"https://clovnime.vercel.app/",detail:"/work/clovnime"},
   {n:"04",title:"Clovflapy",cat:"SaaS · API Gateway",desc:"Control plane API LLM pay-as-you-go dengan sistem wallet, tracking usage, dan kompatibilitas OpenAI SDK.",site:"https://clovflapy.vercel.app/",detail:"/work/clovflapy"},
 ];
-const socials=[{label:"Email",href:"mailto:valencied@clovfla.my.id"},{label:"Instagram",href:"https://www.instagram.com/zerovlie"},{label:"X",href:"https://x.com/clovalencied"},{label:"Stockbit",href:"https://stockbit.com/clov"}];
+const socials=[{label:"Email",href:"mailto:valencied@clovfla.my.id"},{label:"Instagram",href:"https://www.instagram.com/zerovlie"},{label:"X",href:"https://x.com/clovalencied"},{label:"Stockbit",href:"https://stockbit.com/clov"},{label:"clopie.base.eth",href:"https://base.app/profile/clopie"}];
 
 export default function Home(){
   const[ready,setReady]=useState(false);
