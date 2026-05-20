@@ -9,7 +9,9 @@ const projects = {
   "clovdmy": { title: "Clovdmy Saham ID", cat: "Finance · Web App", desc: "Platform analisa saham khusus pasar modal Indonesia dengan fitur screening fundamental yang mendalam.", site: "https://clovdmy.lovable.app/" },
   "clovai": { title: "Clov AI Analysis", cat: "Finance · AI", desc: "Asisten Artificial Intelligence pintar yang dirancang khusus untuk pemetaan data saham dan membaca laporan keuangan secara instan.", site: "https://clovai.lovable.app/" },
   "rena-ai": { title: "Rena AI Platform", cat: "AI · Productivity", desc: "Platform AI agentic untuk pembuatan dokumen, presentasi, dan gambar otomatis guna mempercepat alur kerja kreatif.", site: "https://rena-ai-theta.vercel.app/" },
-  "yuvlaw": { title: "YuVlaw Workspace", cat: "SaaS · CMS", desc: "Sistem manajemen konten terpadu (SaaS) untuk pengelolaan produk, kampanye marketing, dan pembuatan agen otomatis (AI).", site: "https://yuvlaw.vercel.app/" }
+  "yuvlaw": { title: "YuVlaw Workspace", cat: "SaaS · CMS", desc: "Sistem manajemen konten terpadu (SaaS) untuk pengelolaan produk, kampanye marketing, dan pembuatan agen otomatis (AI).", site: "https://yuvlaw.vercel.app/" },
+  "clovnime": { title: "Clovnime", cat: "Entertainment · Streaming", desc: "Platform streaming anime modern yang dirancang untuk memberikan pengalaman menonton yang cepat dan nyaman. Dilengkapi dengan update harian untuk anime ongoing, database lengkap untuk anime yang sudah tamat, beserta jadwal rilis ter-update.", site: "https://clovnime.vercel.app/" },
+  "clovflapy": { title: "Clovflapy", cat: "SaaS · API Gateway", desc: "Sebuah control plane API untuk Large Language Models (LLM) bergaya pay-as-you-go yang terasa seperti control room sungguhan. Menyediakan fitur manajemen API key, ledger untuk transparansi saldo (wallet), serta endpoint gateway yang sepenuhnya kompatibel dengan SDK OpenAI standar.", site: "https://clovflapy.vercel.app/" }
 };
 
 export default function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {

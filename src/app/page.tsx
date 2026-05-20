@@ -82,6 +82,8 @@ const projects=[
   {n:"02",title:"Clov AI Analysis",cat:"Finance · AI",desc:"Asisten Artificial Intelligence untuk pemetaan data saham.",site:"https://clovai.lovable.app/",detail:"/work/clovai"},
   {n:"03",title:"Rena AI Platform",cat:"AI · Productivity",desc:"Platform AI agentic untuk pembuatan dokumen, presentasi, dan gambar otomatis.",site:"https://rena-ai-theta.vercel.app/",detail:"/work/rena-ai"},
   {n:"04",title:"YuVlaw Workspace",cat:"SaaS · CMS",desc:"Sistem manajemen konten terpadu untuk pengelolaan produk, kampanye, dan agen otomatis.",site:"https://yuvlaw.vercel.app/",detail:"/work/yuvlaw"},
+  {n:"05",title:"Clovnime",cat:"Entertainment · Streaming",desc:"Platform streaming untuk menonton anime ongoing dan completed dengan jadwal rilis terbaru.",site:"https://clovnime.vercel.app/",detail:"/work/clovnime"},
+  {n:"06",title:"Clovflapy",cat:"SaaS · API Gateway",desc:"Control plane API LLM pay-as-you-go dengan sistem wallet, tracking usage, dan kompatibilitas OpenAI SDK.",site:"https://clovflapy.vercel.app/",detail:"/work/clovflapy"},
 ];
 const socials=[{label:"Email",href:"mailto:valencied@clovfla.my.id"},{label:"Instagram",href:"https://www.instagram.com/zerovlie"},{label:"X",href:"https://x.com/clovalencied"},{label:"Stockbit",href:"https://stockbit.com/clov"}];
 
