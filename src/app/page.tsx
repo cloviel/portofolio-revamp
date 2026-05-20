@@ -57,7 +57,7 @@ function WindowIntro({onDone}:{onDone:()=>void}){
       </div>
       {/* Behind shutters: preview of the hero image */}
       <div className="absolute inset-0 z-10">
-        <Image src="/hero-bg-best.png" alt="" fill className="object-cover opacity-40" priority/>
+        <Image src="/hero-bg-best.png" alt="" fill className="object-cover object-right md:object-center opacity-40" priority/>
         <div className="absolute inset-0 bg-bg/60"/>
       </div>
     </motion.div>
@@ -103,7 +103,7 @@ export default function Home(){
       <section ref={heroRef} className="relative min-h-screen flex items-end overflow-hidden">
         {/* Background image with parallax */}
         <motion.div style={{scale:imgScale}} className="absolute inset-0 z-0">
-          <Image src="/hero-bg-best.png" alt="" fill className="object-cover" priority/>
+          <Image src="/hero-bg-best.png" alt="" fill className="object-cover object-right md:object-center" priority/>
           <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/30"/>
           <div className="absolute inset-0 bg-gradient-to-r from-bg/50 to-transparent"/>
         </motion.div>
@@ -119,7 +119,7 @@ export default function Home(){
           </div></Rev>
         </motion.div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"><motion.div animate={{y:[0,6,0]}} transition={{repeat:Infinity,duration:2}} className="w-5 h-8 rounded-full border border-white/30 flex justify-center pt-1.5"><div className="w-0.5 h-1.5 bg-white/40 rounded-full"/></motion.div></div>
+        <div className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2 z-10"><motion.div animate={{y:[0,6,0]}} transition={{repeat:Infinity,duration:2}} className="w-5 h-8 rounded-full border border-white/30 flex justify-center pt-1.5"><div className="w-0.5 h-1.5 bg-white/40 rounded-full"/></motion.div></div>
       </section>
 
       <Mq items={["Developer","Analyst","Photographer","Writer","Web3","Designer"]}/>
