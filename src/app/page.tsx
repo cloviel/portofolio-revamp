@@ -15,7 +15,7 @@ function Cursor(){const ref=useRef<HTMLDivElement>(null);useEffect(()=>{const c=
 
 function Mag({children,className="",href,target,rel}:{children:ReactNode;className?:string;href?:string;target?:string;rel?:string}){const ref=useRef<HTMLAnchorElement>(null);const mv=useCallback((e:React.MouseEvent)=>{const el=ref.current;if(!el)return;const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*0.25}px,${(e.clientY-r.top-r.height/2)*0.25}px)`},[]);const lv=useCallback(()=>{if(ref.current)ref.current.style.transform="translate(0,0)"},[]);return <a ref={ref} href={href} target={target} rel={rel} onMouseMove={mv} onMouseLeave={lv} data-m className={`inline-flex items-center transition-transform duration-300 ${className}`}>{children}</a>;}
 
-const roles=["Pengembang","Web3 Developer","Market Analyst","Fotografer","Penulis"];
+const roles=["Pengembang","Web3 Developer","Fotografer","Penulis"];
 function RoleText(){const[i,setI]=useState(0);useEffect(()=>{const t=setInterval(()=>setI(p=>(p+1)%roles.length),2400);return()=>clearInterval(t)},[]);return(<span className="inline-block h-[1.3em] overflow-hidden align-bottom"><AnimatePresence mode="wait"><motion.span key={i} initial={{y:36,opacity:0}} animate={{y:0,opacity:1}} exit={{y:-36,opacity:0}} transition={{duration:0.35}} className="inline-block text-accent font-medium">{roles[i]}</motion.span></AnimatePresence></span>);}
 
 /* ── WINDOW OPEN INTRO ── */
@@ -72,18 +72,15 @@ function Mq({items}:{items:string[]}){const d=[...items,...items,...items,...ite
 const skills=[
   {title:"Web3 Developer",desc:"Building decentralized applications and smart contracts."},
   {title:"Programmer",desc:"Vibe coding specialist, crafting aesthetic software."},
-  {title:"Market Analyst",desc:"Fundamental-focused analysis across stocks and crypto."},
   {title:"Fotografer",desc:"Capturing moments with precision and mood."},
   {title:"Service Gadget",desc:"Hardware repair and troubleshooting."},
   {title:"Penulis & Editor",desc:"Crafting compelling narratives and refining content."},
 ];
 const projects=[
-  {n:"01",title:"Clovdmy Saham ID",cat:"Finance · Web App",desc:"Platform analisa saham khusus pasar modal Indonesia.",site:"https://clovdmy.lovable.app/",detail:"/work/clovdmy"},
-  {n:"02",title:"Clov AI Analysis",cat:"Finance · AI",desc:"Asisten Artificial Intelligence untuk pemetaan data saham.",site:"https://clovai.lovable.app/",detail:"/work/clovai"},
-  {n:"03",title:"Rena AI Platform",cat:"AI · Productivity",desc:"Platform AI agentic untuk pembuatan dokumen, presentasi, dan gambar otomatis.",site:"https://rena-ai-theta.vercel.app/",detail:"/work/rena-ai"},
-  {n:"04",title:"YuVlaw Workspace",cat:"SaaS · CMS",desc:"Sistem manajemen konten terpadu untuk pengelolaan produk, kampanye, dan agen otomatis.",site:"https://yuvlaw.vercel.app/",detail:"/work/yuvlaw"},
-  {n:"05",title:"Clovnime",cat:"Entertainment · Streaming",desc:"Platform streaming untuk menonton anime ongoing dan completed dengan jadwal rilis terbaru.",site:"https://clovnime.vercel.app/",detail:"/work/clovnime"},
-  {n:"06",title:"Clovflapy",cat:"SaaS · API Gateway",desc:"Control plane API LLM pay-as-you-go dengan sistem wallet, tracking usage, dan kompatibilitas OpenAI SDK.",site:"https://clovflapy.vercel.app/",detail:"/work/clovflapy"},
+  {n:"01",title:"Clov AI Analysis",cat:"Finance · AI",desc:"Asisten Artificial Intelligence untuk pemetaan data saham.",site:"https://clovai.lovable.app/",detail:"/work/clovai"},
+  {n:"02",title:"Rena AI Platform",cat:"AI · Productivity",desc:"Platform AI agentic untuk pembuatan dokumen, presentasi, dan gambar otomatis.",site:"https://rena-ai-theta.vercel.app/",detail:"/work/rena-ai"},
+  {n:"03",title:"Clovnime",cat:"Entertainment · Streaming",desc:"Platform streaming untuk menonton anime ongoing dan completed dengan jadwal rilis terbaru.",site:"https://clovnime.vercel.app/",detail:"/work/clovnime"},
+  {n:"04",title:"Clovflapy",cat:"SaaS · API Gateway",desc:"Control plane API LLM pay-as-you-go dengan sistem wallet, tracking usage, dan kompatibilitas OpenAI SDK.",site:"https://clovflapy.vercel.app/",detail:"/work/clovflapy"},
 ];
 const socials=[{label:"Email",href:"mailto:valencied@clovfla.my.id"},{label:"Instagram",href:"https://www.instagram.com/zerovlie"},{label:"X",href:"https://x.com/clovalencied"},{label:"Stockbit",href:"https://stockbit.com/clov"}];
 
