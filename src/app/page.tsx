@@ -72,6 +72,7 @@ function Mq({items}:{items:string[]}){const d=[...items,...items,...items,...ite
 const skills=[
   {title:"Web3 Developer",desc:"Building decentralized applications and smart contracts."},
   {title:"Programmer",desc:"Vibe coding specialist, crafting aesthetic software."},
+  {title:"Market Analyst",desc:"Fundamental-focused analysis across stocks and crypto."},
   {title:"Fotografer",desc:"Capturing moments with precision and mood."},
   {title:"Service Gadget",desc:"Hardware repair and troubleshooting."},
   {title:"Penulis & Editor",desc:"Crafting compelling narratives and refining content."},
