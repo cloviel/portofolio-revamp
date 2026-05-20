@@ -240,7 +240,7 @@ export default function Home(){
 
       <footer className="border-t border-line py-8 max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-tertiary">
         <div className="flex items-center gap-3"><span className="font-serif italic text-fg">Nendy Rosiano</span><span>© {new Date().getFullYear()}</span></div>
-        <div className="flex items-center gap-4"><span>Built with Next.js</span></div>
+        <div className="flex items-center gap-4"><span>built with you its very happy</span></div>
       </footer>
     </div>
   </>);
