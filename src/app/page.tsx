@@ -211,11 +211,33 @@ export default function Home(){
 
       <div className="h-px bg-line"/>
 
+      {/* ═══ JOURNEY ═══ */}
+      <section id="journey" className="relative py-24 md:py-48 overflow-hidden">
+        <div className="absolute inset-0 z-0"><Image src="/accent-bg.png" alt="" fill className="object-cover opacity-15"/><div className="absolute inset-0 bg-bg/75"/></div>
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
+          <Rev><p className="text-[13px] tracking-[0.3em] uppercase text-accent font-mono mb-4">04 — Perjalanan</p></Rev>
+          <Rev><h2 className="font-serif italic text-4xl md:text-5xl text-fg leading-tight mb-16">Journey.</h2></Rev>
+          <div className="relative ml-4">
+            <div className="absolute left-0 top-0 bottom-0 w-px bg-line"/>
+            {[
+              {period:"Jan — Apr 2022",role:"Photography Intern",place:"Kresna Fotografi, Pati",desc:"Mengasah kemampuan visual storytelling dan teknik fotografi profesional di studio kreatif lokal."},
+              {period:"Jun 2023 — Mar 2024",role:"Co-Owner & Chef",place:"Mentoast, Pati",desc:"Membangun bisnis F&B dari nol — mengelola operasional harian, kreasi menu, hingga branding."},
+              {period:"Feb — Jun 2024",role:"Key Opinion Leader (KOL)",place:"Trojan Bot (now Trojan Terminal)",desc:"Menjadi KOL untuk salah satu platform bot trading terkemuka di ekosistem crypto."},
+              {period:"Sep — Nov 2024",role:"Community Manager",place:"OGC — GameFi Project",desc:"Mengelola dan mengembangkan komunitas untuk proyek GameFi berbasis cryptocurrency."},
+              {period:"Aug 2024 — Jan 2025",role:"Core Contributor",place:"Optimism (Ethereum L2)",desc:"Berkontribusi langsung pada optimasi infrastruktur blockchain — berhasil menurunkan gas fee hingga 2.7× lebih murah dengan memodifikasi struktur block on-chain."},
+              {period:"Jan 2026 — Present",role:"AI Builder",place:"Independent",desc:"Membangun dan bereksperimen dengan Agentic AI / AI Agent — mengeksplorasi frontier teknologi kecerdasan buatan."},
+            ].map((j,i,arr)=>(<Rev key={j.role+j.period} d={i*0.08}><div className={`relative pl-10 group ${i !== arr.length - 1 ? 'pb-14' : ''}`}><div className="absolute left-[-3px] top-2 w-[7px] h-[7px] rounded-full bg-accent border-2 border-bg group-hover:scale-150 transition-transform"/><span className="text-[11px] font-mono uppercase tracking-[0.2em] text-tertiary block mb-2">{j.period}</span><h3 className="text-xl font-semibold text-fg mb-1">{j.role}</h3><p className="text-sm text-accent/60 mb-1">{j.place}</p><p className="text-[15px] text-secondary">{j.desc}</p></div></Rev>))}
+          </div>
+        </div>
+      </section>
+
+      <div className="h-px bg-line"/>
+
       {/* ═══ EDUCATION ═══ */}
       <section id="education" className="relative py-24 md:py-48 overflow-hidden">
         <div className="absolute inset-0 z-0"><Image src="/accent-bg.png" alt="" fill className="object-cover opacity-15"/><div className="absolute inset-0 bg-bg/75"/></div>
         <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <Rev><p className="text-[13px] tracking-[0.3em] uppercase text-accent font-mono mb-4">04 — Pendidikan</p></Rev>
+          <Rev><p className="text-[13px] tracking-[0.3em] uppercase text-accent font-mono mb-4">05 — Pendidikan</p></Rev>
           <Rev><h2 className="font-serif italic text-4xl md:text-5xl text-fg leading-tight mb-16">Education.</h2></Rev>
           <div className="relative ml-4">
             <div className="absolute left-0 top-0 bottom-0 w-px bg-line"/>
